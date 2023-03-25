@@ -1,0 +1,132 @@
+.containerFinance {
+    display: flex;
+    width: 28rem;
+}
+
+.containerFinance > h2 {
+    font-size: 1rem; 
+}
+
+.containerFinance > p {
+    font-size: 1.375rem;
+    margin-top: 2rem;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: .9375rem;
+    margin-top: 1.8125rem;
+}
+
+.cardProduct1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    border-left: .25rem solid var(--Color-Secondary);
+    border-radius: .25rem;
+    padding: .3125rem .875rem 1.25rem .875rem;
+    max-width: 100%;
+}
+
+.CardProduct2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    border-left: .25rem solid var(--Grey-3);
+    border-radius: .25rem;
+    padding: .3125rem .875rem 1.25rem .875rem;
+    max-width: 100%;
+}
+
+.DivEsquerda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .9rem;
+    padding: 1rem 0rem;
+}
+
+.DivEsquerda > p{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.DivDireita{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.DivDireita > button{
+    display: flex;
+    text-align: center;
+    padding: .3125rem .625rem;
+    border: none;
+    cursor: pointer;
+    background-color: #E9ECEF;
+    max-width: 100%;
+    width: 3.75rem;
+    border-radius: .25rem;
+}
+
+.DivDireita > button:hover{
+    background-color: #d8d8d8;
+}
+
+.TextSalario {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+span{
+    font-size: .875rem;
+    color: #343A40;
+}
+
+.ButtonExcluir {
+    font-size: .875rem;
+}
+
+@media (min-width:320px) {
+    .containerFinance {
+        flex-direction: column;
+        padding: 0 1.25rem;
+    }
+}
+@media (min-width:375px) {
+    .containerFinance {
+        padding: 0;
+    }
+}
+@media (min-width:425px) {
+    .containerFinance {
+        padding: 0 1.25rem;
+    }
+}
+@media (min-width:768px) {
+    .containerFinance {
+        justify-content: center;
+        width: 100%;
+    }
+    .cardProduct1{
+        flex-direction: row;
+        padding: .3125rem .875rem ;    
+    }
+    .CardProduct2 {
+        flex-direction: row;
+        padding: .3125rem .875rem ;
+    }
+    .DivDireita > button{
+        align-self: flex-end;
+    }
+}
+@media (min-width:1024px) {
+    .containerFinance {
+        justify-content: flex-start;
+        width: 37.5rem;
+    }
+}

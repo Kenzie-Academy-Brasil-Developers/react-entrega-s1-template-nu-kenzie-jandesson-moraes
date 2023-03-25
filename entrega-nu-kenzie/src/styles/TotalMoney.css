@@ -1,0 +1,96 @@
+.DivTotalMoney {
+    display: flex;
+    flex-direction: column;
+    height: 6rem;
+    border: 1px solid #00000031;
+    border-radius: .5rem;
+    padding: 0px 1.25rem;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+    position: absolute;
+}
+
+.DivTotalMoney > p {
+    font-size: .75rem;
+    color: #343A40;
+}
+
+.containerValor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.TextValor{
+    align-self: flex-start;
+}
+
+.ValorTotal{
+    color: var(--color-primary);
+}
+
+@media(min-width:320px) {
+    .DivTotalMoney {
+        width: 18rem;
+        top: 37.5rem;
+        left: 1.25rem;
+    }
+}
+
+@media(min-width:375px) {
+    .DivTotalMoney {
+        width: 21rem;
+        top: 37.5rem;
+        left: 1.25rem;
+    }
+}
+@media(min-width:425px) {
+    .DivTotalMoney {
+        width: 22.25rem;
+        top: 37.5rem;
+        left: 2.125rem;
+    }
+}
+@media(min-width:768px) {
+    .DivTotalMoney {
+        width: 22.25rem;
+        top: 36.5rem;
+        left: 12.875rem;
+    }
+}
+@media(min-width:1024px) {
+    .DivTotalMoney {
+        top: 36.875rem;
+        left: 1.625rem;
+    }
+}
+@media(min-width:1280px) {
+    .DivTotalMoney {
+        top: 36.875rem;
+        left:9.625rem;
+    }
+}
+@media(min-width:1366px) {
+    .DivTotalMoney {
+        top: 36.875rem;
+        left:11.875rem;
+    }
+}
+@media(min-width:1440px) {
+    .DivTotalMoney {
+        top: 36.875rem;
+        left: 14.625rem;
+    }
+}
+@media(min-width:1560px) {
+    .DivTotalMoney {
+        top: 36.875rem;
+        left: 26.875rem;
+    }
+}
+@media(min-width:2560px) {
+    .DivTotalMoney {
+        top: 36.875rem;
+        left: 49.6875rem;
+    }
+}

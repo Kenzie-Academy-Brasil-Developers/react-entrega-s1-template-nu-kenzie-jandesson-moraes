@@ -1,0 +1,68 @@
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 22.1875rem;
+    height: 28.75rem;
+    border: 1px solid #00000031;
+    justify-content: space-between;
+    padding: 1.875rem 1.25rem 3.125rem 1.25rem;
+    border-radius: .5rem;
+    position: relative;
+}
+
+.btnForm {
+    border-radius: .5rem;
+    height: 3rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: var(--color-primary);
+}
+
+.btnForm:hover {
+    background-color: var(--color-primary-2);
+}
+
+input {
+    border-radius: .5rem;
+    height: 3rem;
+    border: none;
+    outline: none;
+    background-color: var(--Grey-1);
+    font-size: 1rem;
+    color: var(--grey-3);
+    padding: 0.6em 1.2em;
+}
+
+select {
+    border-radius: .5rem;
+    height: 3rem;
+    border: none;
+    background-color: var(--Grey-1);
+    font-size: .75rem;
+    color: #343A40;
+    font-weight: 500;
+    padding: 0.6em 1.2em;
+}
+
+option {
+    display: flex;
+    background-color: var(--Grey-1);
+    color: var(--Grey-3);
+    padding: 1rem;
+    font-size: .75rem;
+    font-weight: 500;
+    padding-top: .75rem;
+}
+
+.ex {
+    font-size: .75rem;
+    color: var(--Grey-3);
+}
+
+label {
+    font-size: .75rem;
+    font-weight: 400;
+}
+
