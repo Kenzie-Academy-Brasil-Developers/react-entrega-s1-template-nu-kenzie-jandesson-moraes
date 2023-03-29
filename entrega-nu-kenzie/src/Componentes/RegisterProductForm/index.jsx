@@ -1,44 +1,42 @@
 import { useState } from 'react';
-import { TotalMoney } from '../TotalMoney';
 import '../../styles/index.css';
-import '../../styles/pages/style.module.css'
+import '../../styles/pages/style.module.css';
 
+export const RegisterTransictionForm = ({financeCategory, addProductToTransactionList}) => {
 
-export function RegisterProductForm ({categories, addProductToProductList}) {
-    
     const [formData, setformData] = useState({
-        ProductName: '',
-        ProductWeight: '',
-        ProductCategory: '',
+        TransactionName: '',
+        TransitionPeso: '',
+        TransitionCategory: '',
     });
 
-    function submit(event) {
+    const submit = (event) => {
         event.preventDefault()
-        addProductToProductList(formData)
+        addProductToTransactionList(formData)
         setformData({
-            ProductName: '',
-            ProductWeight: '',
-            ProductCategory: '',
+            TransactionName: '',
+            TransitionPeso: '',
+            TransitionCategory: '',
         });
     };
-    
-    const isEmpty = formData.ProductName === '' || formData.ProductWeight === '' || formData.ProductCategory === '';
+
+    const isEmpty = formData.TransactionName === '' || formData.TransitionPeso === '' || formData.TransitionCategory === '';
 
     return(
         <>
             <form onSubmit={submit}>
                 <label>Descrição</label>
-                <input type='text' value={formData.ProductName} onChange={(event) => setformData({...formData, ProductName: event.target.value})} placeholder='Digite aqui sua descrição' />
+                <input type='text' value={formData.TransactionName} onChange={(event) => setformData({...formData, TransactionName: event.target.value})} placeholder='Digite aqui sua descrição' />
                 <span className='ex'> Ex: Compra de roupas </span>
 
                 <label htmlFor=''> Valor (R$) </label>
-                <input type='number' value={formData.ProductWeight} onChange={(event) => setformData({...formData, ProductWeight: event.target.value})} placeholder='1' />
+                <input type='number' value={formData.TransitionPeso} onChange={(event) => setformData({...formData, TransitionPeso: event.target.value})} placeholder='1' />
                 <label htmlFor=''> Tipo de valor </label>
 
-                <select value={formData.ProductCategory} onChange={(event) => setformData({...formData, ProductCategory: event.target.value})} >
+                <select value={formData.TransitionCategory} onChange={(event) => setformData({...formData, TransitionCategory: event.target.value})} >
                     <option value=''> Selecione uma categoria </option>
-                    {categories.map(category => (
-                        <option key={category.slug} value={category.slug}> {category.labol} </option>
+                    {financeCategory.map(finance => (
+                        <option key={finance.slug} value={finance.slug}> {finance.labol} </option>
                         ))};
                 </select>
                 <button className='btnForm' type='submit' disabled={isEmpty ? true : false}> Inserir Valor </button>

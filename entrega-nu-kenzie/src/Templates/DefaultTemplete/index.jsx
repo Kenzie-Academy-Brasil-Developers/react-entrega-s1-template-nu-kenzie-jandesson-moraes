@@ -1,6 +1,6 @@
 import { Header } from '../../Componentes/Header';
 
-export function DefaultTemplate({children}) {
+export const DefaultTemplate = ({children}) => {
     return(
         <>
             <Header />
@@ -10,3 +10,4 @@ export function DefaultTemplate({children}) {
         </>
     );
 };
+

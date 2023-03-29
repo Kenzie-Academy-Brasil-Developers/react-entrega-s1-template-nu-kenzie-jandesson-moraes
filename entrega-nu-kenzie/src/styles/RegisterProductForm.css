@@ -2,13 +2,11 @@ form {
     display: flex;
     flex-direction: column;
     text-align: left;
-    width: 22.1875rem;
     height: 28.75rem;
     border: 1px solid #00000031;
     justify-content: space-between;
     padding: 1.875rem 1.25rem 3.125rem 1.25rem;
     border-radius: .5rem;
-    position: relative;
 }
 
 .btnForm {
@@ -64,5 +62,11 @@ option {
 label {
     font-size: .75rem;
     font-weight: 400;
+}
+
+@media(min-width: 375px){
+    form{
+        width: 22.1875rem;
+    }
 }
 

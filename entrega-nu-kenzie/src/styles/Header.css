@@ -6,6 +6,7 @@
 
 @media(min-width: 320px) {
     header {
+        width: 100%;
         max-height: 5.5rem;
         box-shadow: 0 .3125rem 1.25rem .0625rem rgba(116, 116, 116, 0.363);
     }
@@ -21,5 +22,23 @@
     header {
         max-height: 5.5rem;
         box-shadow: 0 .3125rem 1.25rem .0625rem rgba(116, 116, 116, 0.363);
+    }
+}
+
+@media(min-width: 425px) {
+    header {
+        max-height: 5.5rem;
+        box-shadow: 0 .3125rem 1.25rem .0625rem rgba(116, 116, 116, 0.363);
+    }
+    .divLogo{
+        width: 24.375rem;
+    }
+}
+
+@media(min-width: 768px) {
+
+    .divLogo {
+    height: 80px;
+    width: 62.5rem;
     }
 }

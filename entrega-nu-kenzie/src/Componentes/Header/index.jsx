@@ -1,8 +1,8 @@
 import '../../styles/index.css';
 import '../../styles/pages/style.module.css';
-import logo from '../../assets/logo.svg'
+import logo from '../../assets/logo.svg';
 
-export function Header() {
+export const Header = () => {
     return(
         <header>
             <div className="divLogo">

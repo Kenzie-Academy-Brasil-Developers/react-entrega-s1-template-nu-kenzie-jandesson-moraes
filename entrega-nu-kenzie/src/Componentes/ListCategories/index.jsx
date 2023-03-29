@@ -1,4 +1,4 @@
-export function ListCategories({categories}) {
+export const ListCategories = ({categories}) => {
     return(
         <ul>
             {categories.map(({labol, slug}) => (
