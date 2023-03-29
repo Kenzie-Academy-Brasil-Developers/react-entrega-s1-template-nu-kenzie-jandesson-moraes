@@ -15,7 +15,7 @@ export const TotalMoney = ({transactionList}) => {
         <div className='DivTotalMoney'>
             <div className='containerValor'>
                 <h3> Valor total: </h3>
-                <h2 className='ValorTotal'>R$:{total}</h2>
+                <h2 className='ValorTotal'>R$:{total.toLocaleString()}</h2>
             </div>
             <p className='TextValor'> O valor se refere ao saldo </p>
         </div>
