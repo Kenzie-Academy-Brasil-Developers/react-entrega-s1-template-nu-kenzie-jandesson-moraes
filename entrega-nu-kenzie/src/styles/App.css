@@ -52,6 +52,7 @@ button {
     justify-content: space-evenly;
     padding: 0px;
     flex-direction: row;
+    gap: 0;
   }
   .containerFormTotalMoney{
     margin-top: 0;
