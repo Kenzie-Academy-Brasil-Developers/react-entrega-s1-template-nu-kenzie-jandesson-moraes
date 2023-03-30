@@ -2,10 +2,27 @@
     display: flex;
     flex-direction: column;
     height: 6rem;
-    border: 1px solid #00000029;
-    border-radius: .5rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: .25rem;
     padding: 0px 1.25rem;
     justify-content: space-around;
+    background-color: #FFFFFF;
+}
+
+form > input {
+    background-color: #F8F9FA;
+}
+
+form > select {
+    font-size: .75rem;
+    color: #343A40;
+    font-weight: 400;
+}
+
+form > select > option{
+    color: #343A40;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 .DivTotalMoney > p {

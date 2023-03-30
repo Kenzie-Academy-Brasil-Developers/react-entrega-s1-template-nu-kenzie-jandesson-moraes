@@ -3,10 +3,10 @@ form {
     flex-direction: column;
     text-align: left;
     height: 28.75rem;
-    border: 1px solid #00000031;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
     justify-content: space-between;
     padding: 1.875rem 1.25rem 3.125rem 1.25rem;
-    border-radius: .5rem;
 }
 
 .btnForm {
@@ -29,8 +29,9 @@ input {
     outline: none;
     background-color: var(--Grey-1);
     font-size: 1rem;
-    color: var(--grey-3);
+    color: 212529;
     padding: 0.6em 1.2em;
+    font-weight: 400;
 }
 
 select {
@@ -39,7 +40,7 @@ select {
     border: none;
     background-color: var(--Grey-1);
     font-size: .75rem;
-    color: #343A40;
+    color: 212529;
     font-weight: 500;
     padding: 0.6em 1.2em;
 }
@@ -55,13 +56,16 @@ option {
 }
 
 .ex {
+    font-style: normal;
+    font-weight: 500;
     font-size: .75rem;
-    color: var(--Grey-3);
+    line-height: 1.25rem;
+    color: #868E96;
 }
 
 label {
     font-size: .75rem;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 @media(min-width: 375px){
