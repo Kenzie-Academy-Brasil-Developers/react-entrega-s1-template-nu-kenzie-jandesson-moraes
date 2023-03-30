@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import '../../styles/index.css';
-import '../../styles/pages/style.module.css';
 
 export const RegisterTransictionForm = ({financeCategory, addProductToTransactionList}) => {
 

@@ -17,6 +17,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .TextValor{
@@ -26,10 +27,31 @@
 .ValorTotal{
     color: var(--color-primary);
 }
+@media(min-width:375px) {
+    .containerFormTotalMoney {
+        align-items: center;
+        width: 100%;
+    }
+    .DivTotalMoney {
+        width: 22.25rem;
+        margin-left: 0rem;
+        align-self: flex-start;
+    }
+}
+
+@media(min-width:425px) {
+    .containerFormTotalMoney {
+        align-items: center;
+    }
+    .DivTotalMoney {
+        width: 100%;
+        margin-left: 0rem;
+        align-self: flex-start;
+    }
+}
 
 @media(min-width:768px) {
     .DivTotalMoney {
-        width: 22.25rem;
         margin-left: 0rem;
         align-self: flex-start;
     }

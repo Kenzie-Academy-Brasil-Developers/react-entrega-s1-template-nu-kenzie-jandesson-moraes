@@ -1,6 +1,5 @@
 import { CardTransiction } from './CardProduct1';
 import '../../styles/index.css';
-import '../../styles/pages/style.module.css';
 
 export const ListTransiction = ({transactionList, removeProductFromTransactionList}) => {
 

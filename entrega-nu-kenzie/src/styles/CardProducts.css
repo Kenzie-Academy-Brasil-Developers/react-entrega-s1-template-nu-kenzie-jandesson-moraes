@@ -25,6 +25,7 @@ ul{
     border-radius: .25rem;
     padding: .3125rem .875rem 1.25rem .875rem;
     max-width: 100%;
+    background-color: var(--Grey-1);
 }
 
 .cardTransiction2 {
@@ -35,6 +36,7 @@ ul{
     border-radius: .25rem;
     padding: .3125rem .875rem 1.25rem .875rem;
     max-width: 100%;
+    background-color: var(--Grey-1);
 }
 
 .DivEsquerda {
@@ -86,6 +88,19 @@ span{
 .ButtonExcluir {
     font-size: .875rem;
 }
+@media (min-width:320px) {
+    .cardTransiction1{
+        display: flex;
+        flex-direction: column;
+    }
+    .cardTransiction2{
+        display: flex;
+        flex-direction: column;
+    }
+    .containerFinance {
+        flex-direction: column;
+    }
+}
 
 @media (min-width:375px) {
     .containerFinance {
@@ -96,14 +111,27 @@ span{
 
 @media (min-width:425px) {
     .containerFinance {
+        width: 100%;
         flex-direction: column;
     }
 }
 
 @media (min-width:768px) {
+    header{
+        width: 100%;
+    }
+    .cardTransiction1{
+        display: flex;
+        flex-direction: row;
+        height: 87px;
+    }
+    .cardTransiction2{
+        display: flex;
+        flex-direction: row;
+        height: 87px;
+    }
     .containerFinance {
         flex-direction: column;
-        width: 22.5rem;
     }
     .cardProduct1{
         flex-direction: row;

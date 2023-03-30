@@ -1,5 +1,4 @@
 import '../../styles/index.css';
-import '../../styles/pages/style.module.css';
 
 export const TotalMoney = ({transactionList}) => {
 

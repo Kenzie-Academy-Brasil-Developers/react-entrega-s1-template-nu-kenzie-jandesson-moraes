@@ -1,5 +1,4 @@
 import '../../styles/index.css';
-import '../../styles/pages/style.module.css';
 import logo from '../../assets/logo.svg';
 
 export const Header = () => {

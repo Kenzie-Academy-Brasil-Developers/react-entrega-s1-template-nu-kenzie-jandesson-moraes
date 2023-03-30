@@ -19,6 +19,9 @@ main{
   flex-direction: column;
   height: 100vh;
   width: 100vw;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 button {
@@ -33,6 +36,7 @@ button {
   gap: 1.5rem 1rem;
   margin-top: 1.8125rem;
 }
+
 .containerFormTotalMoney{
   padding: 0 1rem;
   display: flex;
@@ -51,6 +55,7 @@ button {
   }
   .containerFormTotalMoney{
     margin-top: 0;
+    max-width: 375px;
   }
 }
 
